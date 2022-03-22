@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vbt_food_challange/core/theme/text/text_theme.dart';
 
+import '../color/color_theme.dart';
+
 class TextThemeDark implements ITextTheme {
   @override
   TextStyle? bodyText1;
@@ -47,7 +49,10 @@ class TextThemeDark implements ITextTheme {
       subtitle1: TextStyle(fontSize: 16.0),
       headline4: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       caption: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
-      headline5: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      headline5: TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+      ),
       bodyText1: TextStyle(fontSize: 16, fontWeight: FontWeight.normal),
       subtitle2: TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold),
     ).apply(bodyColor: primaryColor);

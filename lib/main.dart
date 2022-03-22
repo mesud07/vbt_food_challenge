@@ -3,7 +3,9 @@ import 'package:vbt_food_challange/core/theme/app_theme.dart';
 import 'package:vbt_food_challange/features/homepage/view/homepage_view.dart';
 import 'package:vbt_food_challange/product/widgets/bottom_navbar.dart';
 
-void main() => runApp(MyApp());
+import 'features/onboardingpage/view/onboarding_view.dart';
+
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -11,9 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material Apppp',
+      title: 'Material App',
       debugShowCheckedModeBanner: false,
-      home: HomePageView(),
+      home: const OnboardingScreen(),
       theme: ThemeManager.createTheme(AppThemeLight()),
     );
   }

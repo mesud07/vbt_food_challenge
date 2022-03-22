@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:vbt_food_challange/core/constant/strings/customContair_string.dart';
 
-class ContainerWidget extends StatelessWidget {
+class ContainerWidget extends StatefulWidget {
   const ContainerWidget({
     Key? key,
   }) : super(key: key);
+
+  @override
+  State<ContainerWidget> createState() => _ContainerWidgetState();
+}
+
+class _ContainerWidgetState extends State<ContainerWidget> {
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +28,12 @@ class ContainerWidget extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const [
+
+
+
+
+
+
                 Icon(
                   Icons.star,
                   color: Colors.yellow,
@@ -41,7 +55,7 @@ class ContainerWidget extends StatelessWidget {
                   color: Colors.yellow,
                 ),
                 SizedBox(
-                  width: 90,
+                  width:90,
                 ),
                 Text(CustomContainerString.date),
               ],
